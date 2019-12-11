@@ -1,5 +1,6 @@
 # mongodb-docker-stack
-Run mongodb docker container using stack.yaml for local development purposes. 
+Run mongodb docker container using docker-compose with stack.yaml file for local development purposes. 
+
 Manage mongodb databases with mongo-express.
 
 The project only contains a single stack.yaml file which should be used as a reference.
@@ -12,3 +13,9 @@ to run the stack:
 4) stop mongo container > docker container stop mongo
 5) run mongo container again > docker container start mongo
 6) open mongo-express to see the if the dbs are still there.
+
+to stop the services:
+
+docker-compose -f stack.yaml stop
+
+
